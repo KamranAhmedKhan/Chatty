@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crystalnetwork.chatty.EditProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+            android:id="@+id/imageView"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_back"
+            android:id="@+id/back_Profile"
+            android:clickable="true" />
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/ic_pencil"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name"
+            android:id="@+id/name_editText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:textColor="#fff9fff7" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/image_layout"
+        android:layout_gravity="center_horizontal"
+        android:fillViewport="false">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Age"
+            android:id="@+id/textView9"
+            android:layout_gravity="left"
+            android:paddingBottom="5dp"
+            android:textColor="#ff000000" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:hint="24"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:id="@+id/age_editText"
+            android:inputType="numberSigned" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Location"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ff000000"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:hint="California, USA"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:id="@+id/location_editText" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="About"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ff000000"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:hint="I am software developed at WizTech"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:id="@+id/about_editText" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_gravity="bottom"
+        android:background="@android:color/background_dark"
+        android:textColor="#fff9fff7"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp" />
+
+</LinearLayout>
